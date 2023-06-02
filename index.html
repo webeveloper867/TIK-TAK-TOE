@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tak Toe</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+flex-direction: column;
+            align-items: center;
+            background-color: lightsalmon;
+        }
+        .box{
+            background-color: rgb(121, 76, 83);
+            width: 80vh;
+            height: 70vh;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+
+        }
+        .btn{
+            display: grid;
+            gap: 10px;
+            padding: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        button{
+            border-radius: 6px;
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            border: none;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        #reset{
+            background-color: rgb(121, 76, 83);
+            border-radius: 6px;
+            width: 80vh;
+            height: 50px;
+            margin-top: 30px;
+            border: none;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+      <div class="main">
+
+        <div class="box">
+            <h2>T I K - T A C - T O E</h2>
+        <div class="btn">
+            <button id="btn0"></button>
+            <button id="btn1"></button>
+            <button id="btn2"></button>
+            <button id="btn3"></button>
+            <button id="btn4"></button>
+            <button id="btn5"></button>
+            <button id="btn6"></button>
+            <button id="btn7"></button>
+            <button id="btn8"></button>
+        
+        </div>
+
+        <p id="player"></p>
+        </div>
+        <button id="reset">Reset Game</button>
+      </div>
+</body>
+<script src="script.js"></script>
+</html>
